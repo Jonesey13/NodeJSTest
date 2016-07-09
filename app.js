@@ -7,7 +7,6 @@ var express = require('express')
 , morgan = require('morgan')
 , path = require ('path');
 
-
 var app = express()
 
 function compile(str, path) {
