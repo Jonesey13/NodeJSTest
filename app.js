@@ -31,6 +31,6 @@ app.get('/', function (req, res) {
 	    )
 })
 
-app.listen(3000, '0.0.0.0', function() {
-  console.log('Listening to port:  ' + 3000);
+app.listen(80, '0.0.0.0', function() {
+  console.log('Listening to port:  ' + 80);
 });
