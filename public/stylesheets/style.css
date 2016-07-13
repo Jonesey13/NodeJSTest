@@ -112,15 +112,15 @@ header {
   font-family: 'Quicksand';
   padding: 50px 10px;
   color: #fff;
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
 /*
    * Note the use of the `main-color`
    * variable and the `darken` function
    */
-  background-color: #fa5b4d;
-  border-bottom: 1px solid #df1806;
-  text-shadow: 0px -1px 0px #df1806;
+  background-color: #4a7bbd;
+  border-bottom: 1px solid #315687;
+  text-shadow: 0px -1px 0px #315687;
 }
 .container {
   width: 500px;
@@ -133,6 +133,39 @@ header {
 }
 .main-content p {
   margin-bottom: 20px;
+}
+.navbar {
+  font-family: 'Quicksand';
+  font-size: 25px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  -o-box-pack: distribute;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  width: auto;
+  background-color: #f1f1f1;
+}
+.navbar li {
+  padding: 5px;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+}
+.navbar :hover {
+  background-color: #555;
+  color: #fff;
 }
 .sidebar {
   float: left;

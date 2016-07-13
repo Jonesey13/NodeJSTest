@@ -1,12 +1,15 @@
 {
-    "name": "MySite",
-    "version": "0.0.1",
+    "name": "JoneseysSite",
+    "version": "0.0.2",
     "private": "true",
     "main": "app.js",
+    "scripts": {
+	"start": "node app.js"
+    },
     "dependencies": {
 	"express": "*",
+	"stylus": "*",
 	"nib": "*",
-	"stylus": "0.49.*",
 	"pug": "*",
 	"morgan": "*"
     }
