@@ -10,7 +10,7 @@
 	"express": "*",
 	"stylus": "*",
 	"nib": "*",
-	"pug": "*",
+	"ejs": "*",
 	"morgan": "*"
     }
 }
