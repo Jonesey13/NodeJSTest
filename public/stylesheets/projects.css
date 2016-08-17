@@ -92,16 +92,20 @@ a img {
   border: none;
 }
 body {
-  font-family: 'Georgia';
   background-color: #faf9f0;
   color: #444;
+}
+body,
+body * {
+  max-height: 1000000px;
 }
 header {
   font-family: 'Quicksand';
   padding: 50px 10px;
   color: #fff;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
+  height: 50px;
 /*
    * Note the use of the `main-color`
    * variable and the `darken` function
@@ -112,9 +116,11 @@ header {
 }
 .container {
   width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 }
 .main-content {
-  margin: 20px;
   width: 100%;
 }
 .main-content p {
@@ -192,12 +198,6 @@ footer {
   display: box;
   display: flex;
   text-align: center;
-  -webkit-box-align: start;
-  -moz-box-align: start;
-  -o-box-align: start;
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
 }
 .widget-container .widget {
 /*
@@ -232,5 +232,5 @@ footer {
 .widget-container .widget p {
   font-family: 'Merriweather';
   padding-top: 10px;
-  font-size: 20px;
+  font-size: 22px;
 }

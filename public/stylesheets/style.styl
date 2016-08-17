@@ -22,16 +22,20 @@ main-color = #4a7bbd
 background-color = #faf9f0
 
 body
-  font-family 'Georgia'
   background-color background-color
   color #444
 
+// Guards against "font boosting" on mobile devices
+body, body *
+  max-height 1000000px
+  
 header
   font-family 'Quicksand'
   padding 50px 10px
   color #fff
-  font-size 40px
+  font-size 50px
   text-align center
+  height 50px
 
   /*
    * Note the use of the `main-color`
@@ -44,9 +48,11 @@ header
 
 .container
   width 95%
+  margin-left auto
+  margin-right auto
+  margin-top 30px
 
 .main-content
-  margin 20px
   width 100%
 
   p

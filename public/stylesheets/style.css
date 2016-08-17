@@ -105,16 +105,20 @@ a img {
  * background color as variables
  */
 body {
-  font-family: 'Georgia';
   background-color: #faf9f0;
   color: #444;
+}
+body,
+body * {
+  max-height: 1000000px;
 }
 header {
   font-family: 'Quicksand';
   padding: 50px 10px;
   color: #fff;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
+  height: 50px;
 /*
    * Note the use of the `main-color`
    * variable and the `darken` function
@@ -125,9 +129,11 @@ header {
 }
 .container {
   width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 }
 .main-content {
-  margin: 20px;
   width: 100%;
 }
 .main-content p {

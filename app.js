@@ -34,6 +34,10 @@ app.get('/projects', function (req, res) {
   res.render('projects');
 })
 
+app.get('/research', function (req, res) {
+  res.render('research');
+})
+
 app.listen(3000, '0.0.0.0', function() {
   console.log('Listening to port:  ' + 3000);
 });
