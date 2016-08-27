@@ -7,10 +7,13 @@
 	"start": "node app.js"
     },
     "dependencies": {
-	"express": "*",
-	"stylus": "*",
-	"nib": "*",
-	"ejs": "*",
-	"morgan": "*"
+      "express": "*",
+      "stylus": "*",
+      "nib": "*",
+      "ejs": "*",
+      "morgan": "*",
+      "lodash": "*",
+      "marked": "*",
+      "fs-extra": "*"
     }
 }

@@ -1,0 +1,91 @@
+@import 'style'
+
+.blog-controller
+  width 80%
+  margin auto
+
+  .title
+    text-align center
+    font-family 'Merriweather'
+    padding-bottom 12px
+
+  h1
+    font-family 'Merriweather'
+
+  p
+    text-align left
+    
+  .timestamp
+    text-align right
+    font-size 14px
+    margin -20px
+    margin-right 20px
+    
+  hr
+    margin 20
+
+  code
+    font-size 20
+
+  .coding-blog
+    margin 20px
+    
+
+.buttons
+  display inline block
+
+  .next-button
+    position absolute
+    left 88%
+    font-family 'Merriweather'
+    background main-color
+    padding 5px
+    height 20px
+    border-radius 5px
+
+  .next-button::after
+    content ""
+    position absolute
+    top 0
+    right -12px
+    border-style solid
+    border-width 15px 0px 15px 15px
+    border-color transparent transparent transparent main-color
+
+  .next-button:hover
+    background-color #555
+    color white
+
+    &::after
+      border-color transparent transparent transparent #555
+
+
+   .prev-button
+    position absolute
+    right 88%
+    font-family 'Merriweather'
+    background main-color
+    padding 5px
+    height 20px
+    border-radius 5px
+
+  .prev-button::after
+    content ""
+    position absolute
+    top 0
+    left -12px
+    border-style solid
+    border-width 15px 15px 15px 0px
+    border-color transparent main-color transparent transparent
+      
+  .prev-button:hover
+    background-color #555
+    color white
+
+    &::after
+      border-color transparent #555 transparent transparent
+    
+  a
+    text-decoration none
+    color white
+    font-family 'Merriweather'

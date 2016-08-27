@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Home - Jonesey's Test Site</title>
+    <link rel="stylesheet" href="/stylesheets/coding.css"/>
+    <script src="/js/jquery-3.1.0.min.js"></script>
+    <script src="/js/angular.min.js"></script>
+    <link rel="stylesheet" href="/stylesheets/obsidian.css">
+    <script src="/js/highlight.pack.js"></script>
+    <script src="/js/lodash.js"></script>
+    <script src="/js/coding.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Jonesey's Test Site - 周乐的实验网站</h1>
+    </header>
+    <ul class="navbar">
+      <li><a href="/">Home</a></li>
+      <li><a href="coding">Coding</a></li>
+      <li><a href="projects">Projects</a></li>
+      <li><a>Chinese</a></li>
+      <li><a href="research">Research</a></li>
+    </ul>
+    <div class="container">
+      <div class="main-content">
+	<div ng-app="CodingBlog">
+	  <div class="blog-controller" ng-controller="BlogController">
+	    <div ng-show="ready">
+	      <h1 class="title" ng-cloak>{{current_entry.title}}</h1>
+	      <p class="timestamp">Posted: {{current_entry.date}}</p>
+	      <hr/>
+	      <div class="buttons">
+		<div ng-if="prev.available"><a class="prev-button" href="coding?page={{prev.value}}">Show Prev</a></div>
+		<div ng-if="next.available"><a class="next-button" href="coding?page={{next.value}}">Show Next</a></div>
+	      </div>
+	      <div class="coding-blog" ng-bind-html="response | unsafe">
+	      </div>
+	      <div class="buttons">
+		<div ng-if="prev.available"><a class="prev-button" href="coding?page={{prev.value}}">Show Prev</a></div>
+		<div ng-if="next.available"><a class="next-button" href="coding?page={{next.value}}">Show Next</a></div>
+	      </div>
+	    </div>
+	</div>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright Alex Jones 2016</p>
+    </footer>
+  </body>
+</html>

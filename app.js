@@ -5,7 +5,10 @@ var express = require('express')
 , stylus = require('stylus')
 , nib = require('nib')
 , morgan = require('morgan')
-, path = require('path');
+, path = require('path')
+, fs = require('fs')
+, _ = require('lodash')
+, tools = require('./tools')
 
 var app = express()
 
@@ -34,8 +37,20 @@ app.get('/projects', function (req, res) {
   res.render('projects');
 })
 
+app.get('/coding', function (req, res) {
+  res.render('coding');
+})
+
 app.get('/research', function (req, res) {
   res.render('research');
+})
+
+app.get('/text/page/:pagename', function (req, res) {
+  res.send(tools.LoadAndParseCodingBlogEntry(req.params.pagename));
+})
+
+app.get('/text/pagedata', function (req, res) {
+  res.send(tools.GetBlogEntryData());
 })
 
 app.listen(3000, '0.0.0.0', function() {
